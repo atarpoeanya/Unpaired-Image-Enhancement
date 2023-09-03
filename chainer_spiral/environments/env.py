@@ -246,7 +246,12 @@ class PhotoEnhancementEnvDemo(PhotoEnhancementEnvTest):
 
         if done:
             for i in range(self.batch_size):
+                #For showing the editor
                 edit_demo(self.original_original_images[i] * 255, clipped_action[i])
+
+                #For saving the photo
+                # editted_image = self.photo_editor(self.original_original_images[i].copy(), clipped_action[i])
+                # cv2.imwrite(os.path.basename(self.file_names[i]), (editted_image * 255).astype(np.uint8))
 
         ob = {
             'images': self._get_rgb_array()

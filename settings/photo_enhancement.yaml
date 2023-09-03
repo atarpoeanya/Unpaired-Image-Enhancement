@@ -35,7 +35,7 @@ n_update: 6000
 n_eval_interval: 10
 
 # number of times to run evaluation episodes
-eval_n_runs: 1
+eval_n_runs: 10
 
 # number of generating episodes before update discriminator
 rollout_n: 20
@@ -50,7 +50,7 @@ beta: 0.001
 gp_lambda: 10.0
 
 # length of each drawing sequence
-max_episode_steps: 1
+max_episode_steps: 10
 
 # interval to take snapshot
 n_save_interval: 300
